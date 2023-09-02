@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOINUS</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Bootstrap 아이콘 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+
+<!-- Font Awesome 아이콘 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<!-- Material Icons 아이콘 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<style>
+  body {
+    background-image: url('dirt3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+	color: white;
+  }
+        /* Optional: Adjust the height of the body element to fill the viewport */
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }		
+input[type="submit"] {
+    background-color: rgb(50, 51, 46);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  h1 {
+            font-size: 70px;
+            margin-left: 50px;
+            text-align: center;
+            }
+        form {
+            text-align: center;
+            font-size: 30px;
+        }
+		input[type="text"] {
+    font-size: 30px;
+  }
+  input[type="password"] {
+    font-size: 30px;
+  }
+  input[type="submit"] {
+    font-size: 30px;
+  }
+  input[type="email"] {
+    font-size: 30px;
+  }
+  a {
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            margin-left: 50px;
+            text-align: center;
+        }
+		.home-icon {
+            color: white;
+        }
+	</style>
+</head>
+<body>
+	<br>
+    <a href="index.php">
+    <i class="bi bi-house-fill home-icon"></i> <!-- Bootstrap 아이콘 -->
+    <i class="fas fa-home home-icon"></i> <!-- Font Awesome 아이콘 -->
+    </a><br>
+	<h1>JOINUS</h1>
+	<form method="post" action="joinus_process.php">
+		<label for="id">ID:</label>
+		<input type="text" id="id" name="id" required>
+		<br><br>
+		<label for="pass">PASSWORD:</label>
+		<input type="password" id="pass" name="pass" required>
+		<br><br>
+		<label for="pass_re">REPASSWORD:</label>
+		<input type="password" id="pass_re" name="pass_re" required>
+		<br><br>
+		<label for="name">NAME:</label>
+		<input type="text" id="name" name="name" required>
+		<br><br>
+		<label for="email">EMAIL:</label>
+		<input type="email" id="email" name="email" required>
+		<br><br>
+		<label for="phone">PHONE:</label>
+		<input type="text" id="phone" name="phone" required>
+		<br><br>
+		<label for="country">COUNTRY:</label>
+		<input type="text" id="country" name="country" required>
+		<br><br>
+		<input type="submit" value="JoinUs">
+	</form>
+</body>
+</html>
